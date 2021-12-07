@@ -1,0 +1,36 @@
+.result-container {
+    background-color: #fff;
+    width: 95%;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+}
+
+.img-container img {
+  width: 80%;
+  height: 80%;
+}
+
+.result-title {
+  color: #515151;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 650px;
+}
+
+.result-description {
+  color: #515151;
+  font-size: 16px;
+  margin-top: 5px;
+  padding-right: 450px;
+  margin-bottom: 15px;
+  height: 0;
+}
