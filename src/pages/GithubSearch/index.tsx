@@ -11,7 +11,7 @@ type formData = {
 type Address = {
   url: string;
   followers: string; 
-  login: string;
+  location: string;
   name: string;
   avatar_url: string;
 }
@@ -48,7 +48,7 @@ const GithubSearch = () => {
       <div className="container search-container">
         <form onSubmit={handleSubmit}>
           <div className="form-container">
-          <h3>Encontre um perfil Github</h3>
+          <h2>Encontre um perfil Github</h2>
             <input
               type="text"
               name="Github"
@@ -64,9 +64,11 @@ const GithubSearch = () => {
         </form>
         {address &&
                 <ResultCard 
-                title={address.name}
-                description={address.login}
-                url={address.avatar_url} />
+                nome={address.name}
+                seguidores={address.followers}
+                imgUrl={address.avatar_url} 
+                perfilUrl={address.url}
+                localidade={address.location}/>
         }
       </div>
   );
